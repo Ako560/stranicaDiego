@@ -1,16 +1,5 @@
-DESCO — hosting na GitHub Pages
-================================
-
-1. U repou stranicaDiego obriši stare datoteke.
-2. Uploadaj SADRŽAJ ove mape izravno u root repoa
-   (index.html, app.js, assets, images, o-nama...).
-   NE stavljaj još jednu mapu desco-website unutra.
-3. GitHub → Settings → Pages → Deploy from branch → main / (root).
-4. Pričekaj minutu i osvježi https://ako560.github.io/stranicaDiego/
-
-Mora izgledati ovako:
-  stranicaDiego/index.html
-  stranicaDiego/app.js
-  stranicaDiego/logo.png
-  stranicaDiego/images/hero.jpg
-  stranicaDiego/o-nama/index.html
+1. Raspakiraj ZIP (Extract all).
+2. Na GitHubu: Add file → Upload files.
+3. U raspakiranoj mapi stisni Ctrl+A (odaberi SVE fileove) i povuci na GitHub.
+4. Commit changes.
+Nema mapa — svi fileovi idu u root repoa.
