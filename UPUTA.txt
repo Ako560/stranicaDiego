@@ -1,12 +1,16 @@
-DESCO — zadnji ZIP za GitHub (stranicaDiego)
-===========================================
+DESCO — ZIP za GitHub Pages (stranicaDiego)
+==============================================
 
 1. Raspakiraj ZIP (Extract all).
-2. GitHub: Add file → Upload files.
-3. Ctrl+A na SVE (i mapu images) → povuci na GitHub.
-4. Commit changes. Pričekaj minutu i osvježi stranicu.
+2. GitHub → Add file → Upload files.
+3. Označi SVE datoteke i mapu images (Ctrl+A) i povuci na GitHub.
+4. Commit changes. Pričekaj minutu i osvježi:
+   https://ako560.github.io/stranicaDiego/
 
-VAŽNO: mapa images mora ići na GitHub (unutar nje su nacrti projekata).
+VAŽNO:
+- Uploadaj sadržaj ZIP-a izravno u root repoa (index.html mora biti u rootu).
+- NE stavljaj još jednu mapu unutra.
+- Mapa images MORA ići na GitHub (unutar nje su projekti i usluge).
 
 Forma šalje na alex.kksrdoci@gmail.com.
 Prvi upit: FormSubmit šalje Confirm na Gmail — klikni Confirm.
