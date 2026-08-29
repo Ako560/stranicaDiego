@@ -1,16 +1,13 @@
-DESCO — ZIP za GitHub Pages (stranicaDiego)
-==============================================
+DESCO — HTML popravak za GitHub Pages
+========================================
 
-1. Raspakiraj ZIP (Extract all).
+Na GitHubu su nacrti već uploadani, ali HTML traži krivi folder
+(images/p/...). Ove HTML datoteke pokazuju na postojeće mape.
+
+1. Raspakiraj ovaj ZIP.
 2. GitHub → Add file → Upload files.
-3. Označi SVE datoteke i mapu images (Ctrl+A) i povuci na GitHub.
+3. Označi SVE .html datoteke i povuci ih na GitHub (overwrite).
 4. Commit changes. Pričekaj minutu i osvježi:
-   https://ako560.github.io/stranicaDiego/
+   https://ako560.github.io/stranicaDiego/projekti.html
 
-VAŽNO:
-- Uploadaj sadržaj ZIP-a izravno u root repoa (index.html mora biti u rootu).
-- NE stavljaj još jednu mapu unutra.
-- Mapa images MORA ići na GitHub (unutar nje su projekti i usluge).
-
-Forma šalje na alex.kksrdoci@gmail.com.
-Prvi upit: FormSubmit šalje Confirm na Gmail — klikni Confirm.
+Ne treba ponovno slati mape slika.
