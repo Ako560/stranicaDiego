@@ -5,18 +5,29 @@
   var btn = qs('button[aria-controls="mobile-nav"]');
   var nav = qs("#mobile-nav");
   if (btn && nav) {
+    function setOpen(open) {
+      nav.style.display = open ? "block" : "none";
+      nav.style.position = "fixed";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.top = "64px";
+      nav.style.bottom = "0";
+      nav.style.zIndex = "70";
+      nav.style.background = "#fafaf8";
+      nav.style.overflowY = "auto";
+      nav.classList.toggle("invisible", !open);
+      nav.classList.toggle("opacity-0", !open);
+      nav.classList.toggle("pointer-events-none", !open);
+      document.body.style.overflow = open ? "hidden" : "";
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.setAttribute("aria-label", open ? "Zatvori izbornik" : "Otvori izbornik");
+    }
     btn.addEventListener("click", function () {
-      var closed = nav.classList.contains("invisible");
-      nav.classList.toggle("invisible", !closed);
-      nav.classList.toggle("opacity-0", !closed);
-      document.body.style.overflow = closed ? "hidden" : "";
-      btn.setAttribute("aria-expanded", closed ? "true" : "false");
+      var closed = nav.style.display === "none" || !nav.style.display || nav.classList.contains("invisible");
+      setOpen(closed);
     });
     qsa("a", nav).forEach(function (a) {
-      a.addEventListener("click", function () {
-        nav.classList.add("invisible", "opacity-0");
-        document.body.style.overflow = "";
-      });
+      a.addEventListener("click", function () { setOpen(false); });
     });
   }
 
